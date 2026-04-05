@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Places To Visit around Nanaimo</title>
+    <link rel="stylesheet" href="css/main-1.css">
+    <style type="text/css">
+    a:link{
+        color: rgb(10, 10, 82);
+    }
+    a:visited{
+        color: rgb(97, 5, 5);
+    }
+    a:hover{
+        color: rgb(217, 64, 9);
+    }
+    a:active{
+        color: olive;
+    }
+
+    h3{
+       padding: 10px;
+    }
+
+    .floatright{
+            float: right;
+        }
+    .floatleft{
+            float: left;
+        }
+    .clearfloat{
+          clear: both;
+        }
+    .footer{
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            height: 100x;
+            padding: 10px;
+            border: 2px solid rgb(233, 225, 174);
+            margin-bottom: 20px;
+        }
+  
+</style>
+</head>
+<body>
+  
+    
+    
+    <header class="video-header" id="videoHeader">
+        <video class="background-video" autoplay muted loop playsinline>
+          <source src="img/droneshot.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+    
+        <div class="header-content" id="headerContent">
+          <h1>Places To Visit Around Nanaimo</h1>
+          <p>Explore scenic landscapes, coastal beauty, and refreshing destinations around Nanaimo.</p>
+          <a href="places.html" class="header-b" target="_blank">Explore More</a>
+        </div>
+      </header>
+    
+      <script>
+        const header = document.getElementById("videoHeader");
+        const content = document.getElementById("headerContent");
+    
+        window.addEventListener("scroll", function () {
+          const scrollPosition = window.scrollY;
+          const headerHeight = header.offsetHeight;
+    
+          let fadeValue = 1 - (scrollPosition / (headerHeight * 0.8));
+          fadeValue = Math.max(0, Math.min(1, fadeValue));
+    
+          content.style.opacity = fadeValue;
+          content.style.transform = `translateY(-${scrollPosition * 0.15}px)`;
+          header.style.opacity = fadeValue;
+        });
+      </script>
+        
+    </div>
+
+    <section class="content" id="main-content">
+      <h2><em>Nanaimo (The Harbour City):</em></h2>
+          <p>The Ocean Views, Coastal Beauty, and Outdoor Adventure find their union on Nanaimo, which is the East-coast on the Vancouver Island and is best known as the Harbour City. Its busy waterfront, breathtaking marinas and its picturesque scenery of hilly mountains and forest, all combine to provide an ideal blend in terms of relaxation and exploration. The city can be a walk along the harbourfront, a watch of ferries crossing the water or a visit of the well-known Nanaimo Bar, the city gives the genuine feeling of what the west coast of British Columbia is all about.
+           <br>
+           <br>
+           Introduction to your destinations section:
+           However, the magic does not stop there in the city, as a little farther on there is a world of unexplored wortheness that is Nanaimo. There are pristine beaches and serene parks, and rugged shore-lines walks as well as the nearby islands that every type of traveler would like. Play around and find out some of the greatest attractions the surrounding Nanaimo has to offer- you just have to find your next new favourite place to visit.
+       </p>
+   </section>  
+
+ <div class="clearfloat footer">
+
+  Fun Facts:<br>
+ - People race bathtubs here. The Nanaimo Bathtub Race transforms the sea    into the strangest race in the world.<br>
+ - Nanaimo has fewer traffic jams than floatplanes sky meets sea on the daily.<br>
+ - There are still coal mines tunnels under some areas of the city- secret history under your feet.<br>
+ - People do not count kilometers, but minutes to cover distance everything is near.
+    </div>
+  
+
+  <a href="../places to visit/plan.html" target="_blank"></a>
+
+  <form method="post" action="process.php">
+    Change language:<br />
+    <select name="language">
+    <option value="english">English</option>
+     <option value="spanish">Spanish</option>
+     <option value="french">French</option>
+     <option value="hindi">Hindi</option>
+     </select>
+     </form>
+
+
+</body>
+</html>
